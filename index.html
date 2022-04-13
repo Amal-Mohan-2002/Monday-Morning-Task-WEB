@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Today', 'Yesterday'],
+          ['2',  1000,      400],
+          ['4',  1170,      460],
+          ['6',  660,       1120],
+          ['8',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <title>Monday Morning</title>
+</head>
+<body>
+    
+    <header>
+   
+        </div>
+        <div class="ov">
+            <h2>Overview</h2>
+        </div>
+        <div class="right">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <a href="https://mondaymorning.nitrkl.ac.in/">Jones Ferndinand <img src="dname.jpg" alt="DP"></a>
+        </div>
+        
+
+    </header>
+
+    <main>
+        <div class="left">
+            <div class="logo-container">
+                <a href="https://mondaymorning.nitrkl.ac.in/"><img src="LOGO.png" alt=""></a>
+            </div>
+        <div class="sidebar">
+            
+            <center>
+                <img src="dname.jpg"  class="dname" alt="">
+                <h3>Rama Krushna</h3>
+                <p>Design Coordinator</p>
+            </center>
+            <a href="#"><i class="fa-solid fa-people-group"></i><span> People Online</span></a>
+            <a href="#"><i class="fa-solid fa-desktop"></i><span> Dashboard</span></a>
+            <a href="#"><i class="fa-solid fa-table-columns"></i><span> All posts</span></a>
+            <a href="#"><i class="fa-solid fa-calendar-days"></i><span> Calender</span></a>
+            <a href="#"><i class="fa-solid fa-circle-plus"></i><span> New post</span></a>
+            <a href="#"><i class="fa-solid fa-comment"></i><span> Comments</span></a>
+            <a href="#"><i class="fa-solid fa-circle-info"> </i><span> Squiggles</span></a>
+            <a href="#"><i class="fa-solid fa-circle-question"> </i><span> Questions</span></a>
+            <a href="#"><i class="fa-solid fa-message"> </i><span> Forum</span></a>
+            <a href="#"><i class="fa-solid fa-book"></i> Editor's pick<span></span></a>
+            <a href="#"><i class="fa-solid fa-ring"></i><span> Cache</span></a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i><span> Career</span></a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i><span> Multimedia</span></a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i><span> Live</span></a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i><span> Issues</span></a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i><span> Academic Sessions</span></a>
+            <a href="#"><i class="fa-solid fa-chart-pie"></i><span> People snline</span></a>
+            
+
+
+        </div> 
+        <div class="content">
+            <div class="container">
+                <div class="r1 c1 o">
+                    <h2>Unresolved <br><span>60</span></h2
+                ></div>
+                <div class="r1 c2 o">
+                    <h2>Overdue <br><span>16</span></h2
+                ></div>
+                <div class="r1 c3 o">
+                    <h2>Open <br><span>43</span></h2
+                ></div>
+                <div class="r1 c4 o">
+                    <h2>On hold <br><span>64</span></h2
+                ></div>
+                <div id="r2c1" class="r2 c1 o">
+                    <H3>Today's trends</H3>
+                    <span>as of 06 May 2022, 4:00 PM </span>
+                    <!-- <div id="curve_chart" style= width:600px; height:80px; ></div> -->
+                    <img id='graph'src="g.jpg" alt="graph">
+                </div>
+                <div class="r2 c2 o">
+                    <span class="cc2">Resolved</span><br>
+                    <span class="num cc2">449</span><br>
+                    <hr>
+                    <span class="cc2">Received</span><br>
+                    <span class="num cc2">426</span><br>
+                    <hr>
+                    <span class="cc2">Average first response time</span><br>
+                    <span class="num cc2">33m</span><br>
+                    <hr>
+                    <span class="cc2">Average response time</span><br>
+                    <span class="num cc2">3h 8m</span><br>
+                    <hr>
+                    <span class="cc2">Resolution within SLA</span><br>
+                    <span class="num cc2">94%</span><br>
+
+                    
+                </div>
+                
+               
+            </div>
+            <div class="end">
+                <div class="ticket o">
+                    <h3 id="p1">Unresolved Tickets</h3>
+                    <ul class="left" id="lefty">
+                        <li>Waiting on Feature Request</li>
+                        <li>Awaiting Customer Response</li>
+                        <li>Awaiting Developer Fix</li>
+                        <li>Pending</li>
+                    </ul>
+                    <ul id="right">
+                        <li><a href="#">View details</a></li><br>
+                        <li>4238</li>
+                        <li>1005</li>
+                        <li>914</li>
+                        <li>281</li>
+
+                    </ul>
+
+                </div>
+                <div class="task o">
+                    <h3>Tasks</h3>
+                    <ul id="lt">
+                        <li>Today</li>
+                        <li class="create">Create new task</li>
+                        <br>
+                        <li><input type="radio"> Finish ticket update</li>
+                        <li><input type="radio"> Create new ticket example</li>
+                        <li><input type="radio"> Update ticket report</li>
+
+                    </ul>
+
+                    <ul id="rt">
+                        <li><a href="#" id="plus-end"><i class="fa-solid fa-square-plus"></i></a></li>
+                        <br>
+                        <li><a href="#" class="urgent">URGENT</a></li>
+                        <li><a href="#" class="new">NEW</a></li>
+                        <li><a href="#" class="default">DEFAULT</a></li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+            
+        </div>
+        
+        
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
